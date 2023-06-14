@@ -1,10 +1,15 @@
-@import url("https://fonts.google.com/specimen/Poppinsfamily=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     box-sizing: border-box;
+
+}
+/* generales*/
+body {
     --red-color: hsl(0, 78%, 62%);
     --cyan-color: hsl(180, 62%, 55%);
     --orange-color: hsl(34, 97%, 64%);
@@ -12,92 +17,108 @@
     --Very-Dark-Blue-color: hsl(234, 12%, 34%);
     --Grayish-Blue-color: hsl(230, 11%, 78%);
     --Very-Light-Gray-color: hsl(210, 20%, 98%);
-}
-
-body{
-    font-family: 'Open Sans', sans-serif;
+    --white-color: white;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--Very-Light-Gray-color);
-    
- }
- 
+}
 
 p {
-    font-family: "Poppins";
-}
-
- .txt-sup{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
-    color: var(--Grayish-Blue-color);
+    margin: 0.6rem 0;
+    font-size: 1em;
     font-weight: 200;
-    text-align: center;
-   
-    padding: 50px 0 10px 0;
- }
-
- .txt-sup-bold{
-    letter-spacing: .8px;
-    font-weight: 600;
-    color: var(--Very-Dark-Blue-color);
- }
-
-.txt-mid{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-    font-size: 0.8em;
-    color: var(--Grayish-Blue-color);
-    font-weight: 200;
-    text-align: center;
-    padding: 0 0 50px 0;
 }
 
-.cont-grid {
-    display: flex;
-    justify-content: center;
-    width:1400px;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
 
-.div-grl{
-    background-color: white;
+.container{
     width: 100%;
-    padding: 30px;
-    margin: 10px;
-    border: solid 1px rgb(255, 255, 255);
+    max-width: 1300px;
+    margin: 2rem auto;
+}
+   
+.row{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 33.33%;
+}
+
+.card-gral{
+    background-color: var(--white-color);
+
+}
+
+.direc-colum{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container article {
+    background-color: var(--white-color);
+    max-width: 420px;
+    padding: 1.8rem;
     border-radius: 5px;
     -webkit-box-shadow: 0px 3px 17px -13px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 3px 17px -13px rgba(0,0,0,0.5);
     box-shadow: 0px 3px 17px -13px rgba(0,0,0,0.5);
 }
 
-
-.grid-txt-titl {
-    font-weight: 600;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: var(--Very-Dark-Blue-color);
-    
+.container article div {
+    vertical-align: middle;
+    text-align: right;
+    padding: 1.6rem  0 0 0;
 }
 
-.grid-txt-cont {
+
+/* especificos*/
+
+.border-cyan{
+    border-top: solid 3.5px var(--cyan-color);
+}
+
+.border-red{
+    border-top: solid 3.5px var(--red-color);
+}
+
+.border-orange{
+    border-top: solid 3.5px var(--orange-color);
+}
+
+.border-blue{
+    border-top: solid 3.5px var(--blue-color);
+}
+
+.header-tex{
     font-weight: 200;
-    font-size: .8em;
-    margin-bottom: 50px;
-    color: var(--Grayish-Blue-color);
 }
 
-.img-align {
-    display: block;
-    margin-left: auto;
+
+ .txt-sup{
+    font-size: 1.5em;
+    color: var(--Grayish-Blue-color);
+    font-weight: 200;
+    text-align: center;
+    padding: 3rem 0 0.8rem 0;
+ }
+
+ .txt-sup-bold{
+    font-weight: 600;
+    color: var(--Very-Dark-Blue-color);
+ }
+
+.txt-mid{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    color: var(--Grayish-Blue-color);
+    font-weight: 200;
+    text-align: center;
+    padding: 0.8rem 2rem;
 }
+
 
 .attribution {
     margin: 80px 0 80px;
@@ -109,44 +130,14 @@ p {
     color: hsl(228, 45%, 44%);
 }
 
+@media only screen and (max-width : 900px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
 
-  .card {
-    display: block;
-  }
-  
-  .cards {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-gap: 1.5rem;
-  }
-  
-  .top-space{
-    margin-top: 150px;
-  }
+    .container article {
+        margin: 0 2rem;
+    }
 
-  .inter-space{
-    margin-top: 1.5rem;
-  }
-  @media only screen and (max-width : 900px) {
-    .cards { grid-template-columns: repeat(1, 1fr); }
-    .top-space{
-        margin-top: 0;
-      }
-      
-      .div-grl{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .inter-space{
-      margin-top: 25px;
-    }
-    .txt-mid{
-        width: 300px;
-    }
 }
-
-@media only screen and (min-width : 901px) {
-    .cards { grid-template-columns: repeat(3, 1fr); 
-    }
-  }

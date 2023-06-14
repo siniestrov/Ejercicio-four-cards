@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Four card feature section</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/app.css" >
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="./styles/app.css" >
-</head>
 <body>
-  <header>
-  <p class="txt-sup">Reliable, efficient delivery<br>
-    <span class="txt-sup-bold">Powered by Technology</span>
-  </p> 
-  <p class="txt-mid">Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful</p>
-</header>
+    <header>
+        <p class="txt-sup">Reliable, efficient delivery<br>
+          <span class="txt-sup-bold">Powered by Technology</span>
+        </p> 
+        <p class="txt-mid">Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</p>
+      </header>
+      
+    <!-- Cards -->
+    <section class="container row">
+      <!-- col left -->
+      <aside class="col">
+        <article class="border-cyan">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+          <div>
+            <img src="./images/icon-supervisor.svg" alt="icon-supervisor">
+          </div>
+        </article>
+      </aside>
+      <!-- col center -->
+      <aside class="col direc-colum">
+        <article class="border-red">
+          <h3>Team Builder</h3>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <div>
+            <img src="./images/icon-team-builder.svg" alt="icon-supervisor">
+           </div>
+        </article>
+        <article class="border-orange">
+          <h3>Karma</h3>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div>
+            <img src="./images/icon-karma.svg" alt="icon-karma">
+           </div>
+        </article>
+      </aside>
+      <!-- col right -->
+      <aside class="col">
+        <article class="border-blue">
+          <h3>Calculator</h3>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <div>
+            <img src="./images/icon-calculator.svg" alt="icon-calculator">
+          </div>
+        </article>
+      </aside>
+    </section>
 
-  <div class="cards">
-    <div class="card top-space">
-      <div class="div-grl" style="border-top: solid 3.5px var(--cyan-color);">
-        <p class="grid-txt-titl">Supervisor</p>
-        <p class="grid-txt-cont">Monitors activity to identify project roadblocks</p>
-        <img class="img-align" src="./images/icon-supervisor.svg" alt="">
-      </div>
-    </div>
-    <div class="card">
-      <div class="div-grl" style="border-top: solid 3.5px var(--red-color);">
-        <p class="grid-txt-titl">Team Builder</p>
-        <p class="grid-txt-cont">Scans our talent network to create the optimal team for your project</p>
-        <img class="img-align" src="./images/icon-team-builder.svg" alt="">
-      </div>
-      <div class="div-grl inter-space" style="border-top: solid 3.5px var(--orange-color);">
-        <p class="grid-txt-titl">Karma</p>
-        <p class="grid-txt-cont">Regularly evaluates our talent to ensure quality</p>
-        <img class="img-align" src="./images/icon-karma.svg" alt="">
-      </div>
-    </div>
-    <div class="card top-space">
-      <div class="div-grl" style="border-top: solid 3.5px var(--blue-color);">
-        <p class="grid-txt-titl">Calculator</p>
-        <p class="grid-txt-cont">Uses data from past projects to provide better delivery estimates</p>
-        <img class="img-align" src="./images/icon-calculator.svg" alt="">
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Lord Siniestro</a>.
-    </p>
-  </footer>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Lord Siniestro</a>.
+      </p>
+    </footer>
 </body>
 </html>
